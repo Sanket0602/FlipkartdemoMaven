@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test1(failed)">
+    <parameter name="Browser" value="firefox"/>
+    <classes>
+      <class name="TestClasess.Test1class">
+        <methods>
+          <include name="VerifyLogin"/>
+          <include name="afterMethod"/>
+          <include name="verifyUserCanAddAddress"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- TestClasess.Test1class -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test2(failed)">
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="TestClasess.Test1class">
+        <methods>
+          <include name="VerifyLogin"/>
+          <include name="afterMethod"/>
+          <include name="verifyUserCanAddAddress"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- TestClasess.Test1class -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
